@@ -45,5 +45,5 @@ const loadData = (id) => {
 };
 
 window.onload = () => {
-  loadData();
+  loadData(412);
 };
