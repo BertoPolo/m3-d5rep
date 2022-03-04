@@ -1,0 +1,1290 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Heebo:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+
+    <title>Spotify clone</title>
+  </head>
+
+  <body>
+    <!-- container fluid main page section -->
+    <main>
+      <div class="container-fluid">
+        <!-- sidebar section -->
+        <div class="row">
+          <div class="col-2 m-sidebar text-white">
+            <aside class="d-flex flex-column">
+              <div class="d-flex mt-1">
+                <i class="bi bi-spotify m-bi-spotify"></i>
+                <span
+                  class="text-1-three-rem fw-bold ms-1 d-flex justify-content-center align-items-center"
+                  >Spotify</span
+                >
+              </div>
+              <div class="d-flex mt-4">
+                <i class="bi bi-house-fill m-bi-house-fill"></i>
+                <span
+                  class="fw-bold ms-1 m-text-small d-flex justify-content-center align-items-center"
+                  >Home</span
+                >
+              </div>
+              <div class="d-flex mt-1">
+                <i class="bi bi-search m-bi-search mid-gray-text"></i>
+                <span
+                  class="ms-1 mid-gray-text m-text-small d-flex justify-content-center align-items-center"
+                  >Search</span
+                >
+              </div>
+              <div class="d-flex align-items-center mt-1 mid-gray-text">
+                <svg
+                  fill="white"
+                  width="16px"
+                  height="16px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 491.52 491.52"
+                  style="enable-background: new 0 0 491.52 491.52"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <g>
+                        <polygon
+                          points="225.28,409.6 225.28,491.52 266.24,491.52 266.24,409.6 245.76,409.6 			"
+                        />
+                        <path
+                          d="M204.8,225.28h-61.44H81.92H0v143.36h61.44v-102.4c0-11.305,9.155-20.48,20.48-20.48h61.44
+			                	c11.325,0,20.48,9.175,20.48,20.48v102.4h40.96h26.378c1.352-6.697,1.352-13.783,0-20.48h-5.898
+			                	c-7.107,0-13.681-3.686-17.428-9.708c-3.727-6.042-4.076-13.578-0.901-19.927c6.472-12.902,6.472-30.228,0-43.131
+			                	c-3.174-6.349-2.826-13.885,0.901-19.927c3.748-6.021,10.322-9.708,17.428-9.708h161.28c24.392,0,43.52,22.487,43.52,51.2
+			                	c0,5.816-0.963,11.264-2.417,16.425c13.681,8.54,22.897,25.19,22.897,45.015c0,3.523-0.307,6.943-0.86,10.24h41.82V225.28H266.24
+			                	H204.8z"
+                        />
+                        <rect
+                          x="225.28"
+                          y="102.394"
+                          width="20.48"
+                          height="81.92"
+                        />
+                        <rect
+                          x="102.4"
+                          y="286.714"
+                          width="20.48"
+                          height="81.92"
+                        />
+                        <path
+                          d="M385.761,307.2c1.126-1.004,3.359-4.526,3.359-10.24c0-6.287-2.724-9.912-3.666-10.465l-133.325,0.184
+			                  	c0.737,6.82,0.737,13.722,0.021,20.521H385.761z"
+                        />
+                        <path
+                          d="M409.6,358.4c0-6.287-2.724-9.912-3.666-10.465l-17.592,0.021c-0.614,0.021-1.167,0.205-1.782,0.205H272.609
+				c0.717,6.799,0.737,13.701,0.02,20.48h14.09h119.521C407.368,367.636,409.6,364.114,409.6,358.4z"
+                        />
+                        <polygon
+                          points="347.501,94.71 328.966,103.414 363.823,177.551 382.357,168.847 			"
+                        />
+                        <path
+                          d="M471.04,0H20.48C9.155,0,0,9.175,0,20.48v163.84h61.44V81.92c0-11.305,9.155-20.48,20.48-20.48h61.44
+				c11.325,0,20.48,9.175,20.48,20.48h20.48c0-11.305,9.155-20.48,20.48-20.48h61.44c10.691,0,19.169,8.253,20.111,18.678
+				c1.802-2.048,4.014-3.809,6.656-5.038l55.583-26.153c10.24-4.833,22.426-0.41,27.279,9.83l52.265,111.186
+				c2.212,4.69,2.273,9.748,0.922,14.377h62.464V20.48C491.52,9.175,482.365,0,471.04,0z"
+                        />
+                        <path
+                          d="M81.92,409.6H0v61.44c0,11.305,9.155,20.48,20.48,20.48h163.84V409.6h-40.96H81.92z"
+                        />
+                        <path
+                          d="M307.2,409.6v81.92h163.84c11.325,0,20.48-9.175,20.48-20.48V409.6h-84.48H307.2z"
+                        />
+                        <polygon
+                          points="286.72,184.326 321.741,184.326 286.72,109.84 			"
+                        />
+                        <rect
+                          x="163.84"
+                          y="122.874"
+                          width="20.48"
+                          height="61.44"
+                        />
+                        <rect
+                          x="102.4"
+                          y="102.394"
+                          width="20.48"
+                          height="81.92"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+                <span
+                  class="ms-1 m-text-small d-flex justify-content-center align-items-center"
+                  >Your library</span
+                >
+              </div>
+              <div class="d-flex mt-4">
+                <i class="mid-gray-text bi bi-plus-square m-bi-plus-square"></i>
+                <span
+                  class="mid-gray-text ms-1 m-text-small d-flex justify-content-center align-items-center"
+                  >Create playlist</span
+                >
+              </div>
+              <div class="d-flex mt-1 mid-gray-text">
+                <svg
+                  fill="white"
+                  width="16px"
+                  height="16px"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 1000 1000"
+                  enable-background="new 0 0 1000 1000"
+                  xml:space="preserve"
+                >
+                  <metadata>
+                    Svg Vector Icons : http://www.onlinewebfonts.com/icon
+                  </metadata>
+                  <g>
+                    <g
+                      transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                    >
+                      <path
+                        d="M560.3,5010.4c-172.6-42.2-329.9-172.6-412.3-337.5L100,4577V118.1v-4458.9l47.9-95.9c59.5-122.7,174.5-237.8,297.3-297.2l95.9-47.9H5000h4458.9l95.9,47.9c122.7,59.4,237.8,174.5,297.3,297.2l47.9,95.9V118.1V4577l-47.9,95.9c-59.4,122.7-174.5,237.8-297.3,297.3l-95.9,47.9l-4420.5,3.8C2606.6,5021.9,592.9,5018.1,560.3,5010.4z M4039.2,2446.3c297.3-67.1,565.8-214.8,805.5-441.1l164.9-157.3l153.4,147.7c379.7,364.4,868.8,537,1363.6,481.4c843.8-94,1482.5-761.4,1536.2-1603.3c23-375.9-130.4-736.4-494.8-1168c-71-84.4-677-700-1344.4-1365.5l-1214-1214L3730.4-1592.6c-703.8,703.8-1306,1313.7-1340.5,1355.9c-197.5,251.3-345.2,529.3-404.7,763.3c-32.6,128.5-38.4,191.8-28.8,339.5c46,717.3,508.2,1319.4,1181.4,1536.2C3437,2498.1,3745.8,2513.4,4039.2,2446.3z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <span
+                  class="ms-1 mb-4 -text-small d-flex justify-content-center align-items-center"
+                  >Liked songs</span
+                >
+              </div>
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 1</span
+              >
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 2</span
+              >
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 3</span
+              >
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 4</span
+              >
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 5</span
+              >
+              <div class="d-flex align-items-baseline">
+                <span class="m-truncate ml-0 mt-1 m-text-smaller dark-gray-text"
+                  >One hell of a song name</span
+                ><i
+                  class="bi bi-people-fill m-bi-people-fill dark-gray-text ms-1"
+                ></i>
+              </div>
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 6</span
+              >
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 7</span
+              >
+              <div class="d-flex align-items-baseline">
+                <span class="m-truncate ml-0 mt-1 m-text-smaller dark-gray-text"
+                  >One hell of a song name</span
+                ><i
+                  class="bi bi-people-fill m-bi-people-fill dark-gray-text ms-1"
+                ></i>
+              </div>
+              <span class="ml-0 mt-1 m-text-smaller dark-gray-text"
+                >Song 8</span
+              >
+              <div class="d-flex align-items-baseline">
+                <span class="m-truncate ml-0 mt-1 m-text-smaller dark-gray-text"
+                  >One hell of a song name</span
+                ><i
+                  class="bi bi-people-fill m-bi-people-fill dark-gray-text ms-1"
+                ></i>
+              </div>
+              <div class="d-flex align-items-baseline">
+                <span class="m-truncate ml-0 mt-1 m-text-smaller dark-gray-text"
+                  >One hell of a song name</span
+                ><i
+                  class="bi bi-people-fill m-bi-people-fill dark-gray-text ms-1"
+                ></i>
+              </div>
+              <div class="d-flex align-items-baseline">
+                <i
+                  class="bi bi-arrow-down-circle m-bi-arrow-down-circle-fill dark-gray-text me-1"
+                ></i>
+                <span class="fw-bold ml-0 mt-1 m-text-smaller dark-gray-text"
+                  >Install app</span
+                >
+              </div>
+            </aside>
+          </div>
+
+          <!-- main section -->
+
+          <div class="col-10 px-0">
+            <nav class="navbar navbar-expand-lg">
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <div class="nav-arrows-con">
+                      <a class="nav-link" href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi chevron bi-chevron-left"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="nav-item disabled">
+                    <div class="nav-arrows-con disabled ml-3">
+                      <a class="nav-link" href="#">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          class="bi chevron bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  <div
+                    class="collapse navbar-collapse d-flex h-100"
+                    id="navbarNavDropdown"
+                  >
+                    <ul class="navbar-nav">
+                      <div class="dropdown profile d-flex">
+                        <a
+                          class="btn dropdown-toggle profile text-white justify-content-start dropdown-item1"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <img
+                            src="assets/diego.jpg"
+                            class="img-fluid justify-content-start"
+                            id="profilePic"
+                            alt=""
+                          />
+                          <span class="profile">Diego "Ziba" Banovaz</span>
+                        </a>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item1" href="#">Account</a>
+                    <a class="dropdown-item1" href="#">Profile</a>
+                    <a class="dropdown-item1" href="#">Exit</a>
+                  </div>
+                </span>
+              </div>
+            </nav>
+            <div class="mx-3">
+            <div class="top-title">Good Morning</div>
+            <div class="row mb-3">
+              <div class="col-md d-flex pl-0 ml-3 card-top align-items-center">
+                <img src="assets/proxima.png" class="card-top-img" alt="" />
+                <div
+                  class="card-top-content2 line-clamp ml-3"
+                >
+                (Livestream) Interstellar Missions to Proxima centaury
+                </div>
+               
+              </div>
+
+              <div class="col-md d-flex pl-0 ml-3 card-top align-items-center">
+                <img src="assets/instr.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  Instrumental
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+              <div class="col-md d-flex pl-0 ml-3 card-top align-items-center">
+                <img src="assets/Ludwig.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  Ludwig van Beethoven
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+              <div class="col-md d-flex pl-0 ml-3 card-top align-items-center">
+                <img src="assets/topContent2.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  Pop punk
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+              <div class="col-md d-flex pl-0 ml-3 card-top align-items-center">
+                <img src="assets/noise.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  Noise-Alternative
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div
+                class="col-md d-flex pl-0 ml-3 line-clamp card-top align-items-center"
+              >
+                <img src="assets/preferiti.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  Aggiunto ai preferiti
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+
+              <div
+                class="col-md d-flex pl-0 ml-3 line-clamp card-top align-items-center"
+              >
+                <img src="assets/topContent1.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  Children of Bodom
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+              <div
+                class="col-md d-flex pl-0 ml-3 line-clamp card-top align-items-center"
+              >
+                <img src="assets/2021.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  I tuoi brani preferiti del 2021
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+              <div
+                class="col-md d-flex pl-0 ml-3 line-clamp card-top align-items-center"
+              >
+                <img src="assets/meditation.png" alt="" />
+                <div
+                  class="card-top-content2 line-clamp ml-3"
+                >
+                  Active Brain to 100% Potential: Genius Brain and become a webdev
+                </div>
+                
+              </div>
+              <div
+                class="col-md d-flex pl-0 ml-3 line-clamp card-top align-items-center"
+              >
+                <img src="assets/classica.png" alt="" />
+                <div
+                  class="d-flex align-items-center card-top-content line-clamp ml-3"
+                >
+                  Classica
+                </div>
+                <img src="assets/playhoverbtn.png" class="playhover" alt="" />
+              </div>
+            </div>
+            <div class="d-flex pt-4 justify-content-between">
+              <a class="text-white mid-title" href="#">Recently Played</a>
+              <a href="#">
+                <div class="see-all">see all</div>
+              </a>
+            </div>
+
+            <div class="home-container d-flex justify-content-between">
+              <a href="">
+                <div
+                  class="card-container position-relative position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/ride.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Ride The Lightning
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Metallica
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/peace.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Peace Sells... But Who's Buying?
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Megadeth
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card2"
+                      src="assets/tommy2.jpg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Tommy Emmanuel
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Artist
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card2"
+                      src="assets/coheed.jpg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Coheed and Cambia
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Artist
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/10mega.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        top10 Megadeth
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Missing: My Last Words
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card2"
+                      src="assets/steely.jpg"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Steely Dan
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Artist
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="data:image/jpeg;base64,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"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Cliffs O Dover
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Eric Jhonson
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              
+            </div>
+
+            <div class="d-flex titles pt-4 justify-content-between">
+              <a class="text-white mid-title" href="#">My favourites</a>
+              <a href="#">
+                <div class="see-all">see all</div>
+              </a>
+            </div>
+
+            <div class="home-container d-flex justify-content-between">
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Janis Joplin joplin joplin aaaaaa
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Artist Artist Artist Artist Artist Artist aaa
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="d-flex titles pt-4 justify-content-between">
+             <div class= "d-flex flex-column">
+            <a class="text-white mid-title" href="#">Shows to try</a>
+            <div class="subtitle"> Podcasts we think youll'get hooked on</div>
+          </div>
+
+              <a href="#">
+                <div class="see-all justify-content-end">see all</div>
+              </a>
+            </div>
+
+            <div class="home-container d-flex justify-content-between">
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="card-text1 d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">
+                        Janis Joplin joplin joplin aaaaaa
+                      </div>
+                      <p class="card-text mt-n2 line-clamp">
+                        Artist Artist Artist Artist Artist Artist aaa
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="">
+                <div
+                  class="card-container position-relative d-flex justify-content-center"
+                >
+                  <img
+                    src="assets/playhoverbtn.png"
+                    class="playhover2"
+                    alt=""
+                  />
+                  <div>
+                    <img
+                      class="mt-3 img-card"
+                      src="assets/janis.png"
+                      alt="Card image cap"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
+                    >
+                      <div class="card-title line-clamp2">Janis Joplin</div>
+                      <p class="card-text mt-n2 line-clamp">Artist</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <section>
+              <!-- main content of the page -->
+            </section>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- music player section -->
+
+      <section>
+        <div
+          class="container-fluid m-music-player-section-height d-flex justify-content-between"
+        >
+          <!-- left side music player-->
+
+          <div class="d-flex align-items-center">
+            <img src="https://picsum.photos/60" />
+            <p class="text-white m-text-small fw-bold ms-3 mb-1">
+              Another One Bite The Dust - Remastered 2011 <br />
+              <span class="dark-gray-text m-text-small">Queen</span>
+            </p>
+            <i class="bi bi-heart m-bi-heart text-white ms-3"></i>
+            <i class="bi bi-tv m-bi-tv text-white ms-3"></i>
+          </div>
+
+          <!-- mid music player -->
+          <div class="d-flex flex-column mt-2">
+            <div class="d-flex justify-content-center align-items-center">
+              <i class="bi bi-shuffle m-bi-shuffle me-2 text-white"></i>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="me-2"
+                fill="white"
+                width="24px"
+                height="24px"
+                x="0px"
+                y="0px"
+                viewBox="0 0 1000 1000"
+                enable-background="new 0 0 1000 1000"
+                xml:space="preserve"
+              >
+                <metadata>
+                  Svg Vector Icons : http://www.onlinewebfonts.com/icon
+                </metadata>
+                <g>
+                  <g transform="matrix(1 0 0 -1 0 960)">
+                    <path
+                      d="M232.7-30c-12.5,0-23,4.3-31.6,12.9c-8.6,8.6-12.9,19.2-12.9,31.6v890.9c0,12.5,4.3,23,12.9,31.6c8.6,8.6,19.2,12.9,31.6,12.9h89.1c12.5,0,23-4.3,31.6-12.9c8.6-8.6,12.9-19.2,12.9-31.6V515.2l413.4,403.6c7.7,6.5,14,9.8,18.7,9.8c8.9,0,13.4-7.7,13.4-23.2V14.5c0-15.4-4.5-23.2-13.4-23.2c-4.8,0-11,3.3-18.7,9.8L366.4,404.8V14.5c0-12.5-4.3-23-12.9-31.6c-8.6-8.6-19.2-12.9-31.6-12.9H232.7z"
+                    />
+                  </g>
+                </g>
+              </svg>
+              <i
+                class="bi bi-play-circle-fill m-bi-play-circle-fill me-2 text-white"
+              ></i>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="me-2"
+                fill="white"
+                width="24px"
+                height="24px"
+                x="0px"
+                y="0px"
+                width="439.357px"
+                height="439.357px"
+                viewBox="0 0 439.357 439.357"
+                style="enable-background: new 0 0 439.357 439.357"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M360.427,5.833c-3.613-3.617-7.898-5.424-12.847-5.424h-36.545c-4.945,0-9.233,1.807-12.847,5.424
+                c-3.614,3.621-5.428,7.902-5.428,12.85v193.574c-0.948-2.091-2.19-3.901-3.717-5.424L86.343,4.125
+                c-3.617-3.617-6.663-4.856-9.136-3.713c-2.474,1.143-3.711,4.189-3.711,9.137v420.262c0,4.948,1.237,7.994,3.711,9.138
+                c2.473,1.14,5.519-0.1,9.136-3.724L289.048,232.52c1.529-1.711,2.765-3.521,3.72-5.424V420.66c0,4.948,1.81,9.239,5.421,12.847
+                c3.62,3.62,7.904,5.428,12.847,5.428h36.552c4.948,0,9.236-1.808,12.847-5.428c3.614-3.607,5.428-7.898,5.428-12.847V18.683
+                C365.854,13.73,364.037,9.45,360.427,5.833z"
+                  />
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="me-2"
+                fill="white"
+                width="24px"
+                height="24px"
+                x="0px"
+                y="0px"
+                viewBox="0 0 472.615 472.615"
+                style="enable-background: new 0 0 472.615 472.615"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M355.232,0l-13.525,13.525l65.821,65.821h-279.17c-52.894,0-95.924,43.031-95.924,95.919v59.633h19.128v-59.633
+                  c0-42.343,34.452-76.79,76.796-76.79h279.17l-65.821,65.821l13.525,13.525l88.91-88.91L355.232,0z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M421.053,237.714v59.632c0,42.344-34.452,76.795-76.796,76.795H65.087l65.821-65.825l-13.525-13.525l-88.909,88.914
+                  l88.909,88.91l13.525-13.525L65.087,393.27h279.17c52.895,0,95.924-43.031,95.924-95.924v-59.632H421.053z"
+                    />
+                  </g>
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <span class="mid-gray-text me-3">0.25</span>
+              <span class="mid-gray-text d-block m-music-player1"></span>
+              <span class="mid-gray-text d-block m-music-player2"></span>
+              <span class="mid-gray-text ms-3">0.59</span>
+            </div>
+          </div>
+          <!-- right side music player -->
+          <div class="d-flex align-items-center">
+            <i class="bi bi-music-note-list mid-gray-text me-3"></i>
+            <i class="bi bi-pc-display mid-gray-text me-3"></i>
+            <i class="bi bi-volume-up mid-gray-text ms-3"></i>
+            <span class="mid-gray-text d-block m-music-player3"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="homepage.js" defer></script>
+  </body>
+</html>
