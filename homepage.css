@@ -1,7 +1,11 @@
 * {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.mb-6 {
+  margin-bottom: 6.5rem;
 }
 
 /* sidebar classes */
@@ -144,7 +148,7 @@
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   color: white;
   min-height: 100%;
   background-color: rgba(18, 18, 18, 1);
@@ -225,7 +229,7 @@ body {
   height: 100%;
   background-color: rgba(161, 158, 158, 0.192);
   border-radius: 5px;
-  
+
   text-decoration: none;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -252,7 +256,6 @@ body {
   cursor: pointer;
 }
 
-
 .card-top-content {
   max-width: 45%;
   font-size: 16px;
@@ -263,7 +266,6 @@ body {
   max-height: 48px;
   font-size: 16px;
   font-weight: 700;
-  
 }
 .totalContainer {
   margin-left: 3px;
@@ -300,11 +302,11 @@ body {
 .card-container {
   width: 175px;
   height: 260px;
-  border: 1px  #2422228e;
+  border: 1px #2422228e;
   border-radius: 5px;
   background-color: #2422228e;
   text-decoration: none;
-  
+
   color: white;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -387,28 +389,28 @@ body {
   width: 125px;
 }
 .img-card {
-width: 145px;
-height: 145px;
-object-fit: cover;  
-  
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  width: 145px;
+  height: 145px;
+  object-fit: cover;
+
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .img-card2 {
   width: 145px;
   object-fit: cover;
   height: 145px;
-  border-radius:50%;
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-  
-  
-  
+  border-radius: 50%;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-.subtitle{
+.subtitle {
   font-size: 14px;
-  color:#9e9c9c 
-  
+  color: #9e9c9c;
 }
 
 a:link,
