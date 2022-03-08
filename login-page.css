@@ -1,0 +1,66 @@
+* {
+  font-family: 'Heebo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.fb-btn {
+  border-radius: 50px;
+  height: 50px;
+  width: 500px;
+}
+
+.apple-btn {
+  border-radius: 50px;
+  height: 50px;
+  width: 500px;
+  background-color: black;
+}
+
+.hr {
+  overflow: hidden;
+  text-align: center;
+}
+
+.hr:before,
+.hr:after {
+  background-color: #000;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  opacity: 0.25;
+}
+
+.hr:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.hr:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.btn-login {
+  background-color: orange !important;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.orange {
+  color: orange;
+}
+
+.spotify-btn {
+  border-radius: 50px;
+  height: 50px;
+  width: 500px;
+  background-color: black;
+}

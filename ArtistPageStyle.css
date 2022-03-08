@@ -1,0 +1,253 @@
+* {
+  font-family: "Heebo", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3.7rem;
+}
+
+.artist-name-container {
+  background-image: url("assets/Queen__Adam_Lambert_-_Live_Around_the_World.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 46.4%;
+}
+.artist-name {
+  bottom: 0;
+  left: 20px;
+}
+.bi-patch-check-fill {
+  color: blue;
+}
+.followButton {
+  border: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+}
+.bi-three-dots {
+  font-size: 1.5rem;
+}
+.bi-pause-circle-fill {
+  font-size: 3rem;
+  color: rgb(5, 185, 5);
+}
+.bi-pause-circle-fill:hover {
+  color: rgb(13, 218, 13);
+}
+.bi-three-dots {
+  color: white;
+}
+.bg-custom {
+  background: rgb(12, 12, 13);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(12, 12, 13, 0.9724264705882353) 75%,
+    rgba(45, 43, 45, 0.7651435574229692) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(12, 12, 13, 0.9724264705882353) 75%,
+    rgba(45, 43, 45, 0.7651435574229692) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(12, 12, 13, 0.9724264705882353) 75%,
+    rgba(45, 43, 45, 0.7651435574229692) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c0c0d",endColorstr="#2d2b2d",GradientType=1);
+  height: 50vh;
+}
+
+.song {
+  padding-left: 16px;
+}
+.song img {
+  width: 35px;
+}
+.seeMore {
+  font-size: 14px;
+  font-weight: 700;
+}
+.seeMore:hover {
+  color: white !important;
+  cursor: pointer;
+}
+
+.artist-pick {
+  margin-left: 75px !important;
+}
+
+.artistPickPhoto {
+  width: 75px;
+}
+
+/* mouseover-songs */
+
+.highLighting {
+  background: rgba(100, 98, 98, 0.692);
+  border-radius: 5px;
+  padding-left: 16px;
+}
+.listPlay {
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 9px solid white;
+}
+.listNumber {
+  height: 20px;
+  width: 20px;
+}
+.bi-heart:hover {
+  color: green !important;
+  opacity: 1;
+}
+.bi-three-dots {
+  font-size: 2rem;
+}
+.bi-three-dots:hover {
+  color: white !important;
+}
+.hidden {
+  opacity: 0;
+}
+.bandLogo {
+  width: 30px;
+}
+
+/* -------- */
+
+.hiddenSong {
+  display: none;
+}
+
+/* navbar */
+.navbar {
+  background-color: black !important;
+  z-index: 1;
+  padding-left: 15px;
+  margin-right: 3px;
+  position: fixed;
+  top: 0;
+}
+.top-title {
+  margin-top: 26px;
+  font-weight: 700;
+  line-height: 48px;
+  font-size: 32px;
+  margin-bottom: 26px;
+}
+.chevron {
+  width: 32px;
+  height: 32px;
+  color: #ddd3d2;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 50%;
+  background-color: rgba(48, 45, 45, 0.3);
+}
+#dropdownMenuLink {
+  background-color: rgba(0, 0, 0, 0.575);
+  max-height: 36px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: white;
+}
+#profilePic {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.profile {
+  font-size: 13px;
+}
+/* ------ */
+
+/* mirko sidebar code */
+
+.m-sidebar-height {
+  min-height: 90vh;
+  background-color: black !important;
+  position: sticky;
+  top: 0;
+}
+.light-gray-text {
+  color: lightgray;
+}
+.dark-gray-text {
+  color: white;
+  opacity: 0.5;
+}
+.mid-gray-text {
+  color: white;
+  opacity: 0.7;
+}
+.m-text-smaller {
+  font-size: 0.8rem;
+}
+.text-1-three-rem {
+  font-size: 1.3rem;
+}
+.m-bi-spotify {
+  font-size: 2rem;
+}
+.m-text-small,
+.m-bi-house-fill,
+.m-bi-search,
+.m-bi-search,
+.m-bi-plus-square,
+.m-bi-people-fill,
+.m-bi-arrow-down-circle {
+  font-size: 1rem;
+}
+.m-truncate {
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* music player classes */
+.m-music-player-section-height {
+  height: 10vh;
+  background-color: black;
+  position: sticky;
+  bottom: 0;
+}
+.m-bi-heart,
+.m-bi-tv,
+.m-bi-shuffle {
+  font-size: 1rem;
+}
+.m-bi-play-circle-fill {
+  font-size: 2rem;
+}
+.m-music-player1 {
+  height: 10px;
+  width: 100px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: lightgray;
+}
+.m-music-player2 {
+  height: 10px;
+  width: 200px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: grey;
+}
+.m-music-player3 {
+  height: 10px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: lightgray;
+}
+/* ----- */

@@ -1,0 +1,232 @@
+.navbar {
+  background-color: rgba(117, 11, 115, 0.8127626050420168) 100% !important;
+  opacity: 1;
+  z-index: 1;
+  padding-left: 0;
+  margin-right: 3px;
+  position: sticky;
+  top: 0;
+}
+
+#dropdownMenuLink {
+  background-color: rgba(0, 0, 0, 0.575);
+  max-height: 36px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: white;
+}
+#profilePic {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.profile {
+  font-size: 13px;
+}
+
+.chevron {
+  width: 32px;
+  height: 32px;
+  color: #ddd3d2;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 50%;
+  background-color: rgba(48, 45, 45, 0.3);
+}
+
+#HomePageBody {
+  background: rgb(24, 24, 25);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(24, 24, 25, 0.9724264705882353) 57%,
+    rgba(117, 11, 115, 0.8127626050420168) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(24, 24, 25, 0.9724264705882353) 57%,
+    rgba(117, 11, 115, 0.8127626050420168) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(24, 24, 25, 0.9724264705882353) 57%,
+    rgba(117, 11, 115, 0.8127626050420168) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181819",endColorstr="#750b73",GradientType=1);
+  color: white;
+
+  font-family: "Heebo", sans-serif; /* choose one */
+}
+.albumWord {
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.albumTitle {
+  font-size: 30px;
+}
+.bandLogo {
+  height: 20px;
+  width: 20px;
+}
+.infoAlbum {
+  font-size: 13px;
+}
+
+.artist-name-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-content: center;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.bi-heart {
+  font-size: 1.8rem;
+}
+.bi-heart:hover {
+  color: green !important;
+  opacity: 1;
+}
+.bi-three-dots {
+  font-size: 2rem;
+}
+.bi-three-dots:hover {
+  color: white !important;
+}
+
+.bi-play-circle-fill {
+  font-size: 2.6rem;
+}
+.hidden {
+  opacity: 0;
+}
+
+.whiteToPlay {
+  background: white;
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  z-index: 0;
+}
+.bi-play-circle-fill {
+  color: rgb(5, 185, 5);
+  /* z-index: 4; */
+}
+
+.titleUnderline {
+  border-color: #6c757d2a;
+}
+.listNumber {
+  margin-top: 9px;
+}
+/* mouseover-songs */
+.highLighting {
+  background: rgba(100, 98, 98, 0.692);
+  border-radius: 5px;
+  padding-left: 16px;
+}
+.listPlay {
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 9px solid white;
+  margin-top: 17px;
+}
+
+/* -------- */
+
+/* mirko sidebar code */
+
+.m-sidebar {
+  height: 100vh;
+  background-color: black !important;
+  position: sticky;
+  top: 0;
+}
+
+.light-gray-text {
+  color: lightgray;
+}
+
+.dark-gray-text {
+  color: white;
+  opacity: 0.5;
+}
+
+.mid-gray-text {
+  color: white;
+  opacity: 0.7;
+}
+
+.m-text-smaller {
+  font-size: 0.8rem;
+}
+
+.text-1-three-rem {
+  font-size: 1.3rem;
+}
+
+.m-bi-spotify {
+  font-size: 2rem;
+}
+
+.m-text-small,
+.m-bi-house-fill,
+.m-bi-search,
+.m-bi-search,
+.m-bi-plus-square,
+.m-bi-people-fill,
+.m-bi-arrow-down-circle {
+  font-size: 1rem;
+}
+
+.m-truncate {
+  width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* music player classes */
+
+.m-music-player-section-height {
+  height: 10vh;
+  background-color: #181818 !important;
+  position: fixed;
+  bottom: 0;
+}
+
+.m-bi-heart,
+.m-bi-tv,
+.m-bi-shuffle {
+  font-size: 1rem;
+}
+
+.m-bi-play-circle-fill {
+  font-size: 2rem;
+}
+
+.m-music-player1 {
+  height: 10px;
+  width: 100px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: lightgray;
+}
+
+.m-music-player2 {
+  height: 10px;
+  width: 200px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: grey;
+}
+
+.m-music-player3 {
+  height: 10px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: lightgray;
+}
