@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="main.js" defer></script>
+  <title>Spotify - Album</title>
+  <link rel="shortcut icon" href="/media/favicon.png" type="image/x-icon">
+  <script src="main.js" defer></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- Main Container -->
+
+  <div class="container-fluid">
+
+    <div class="row flex-nowrap main-wrapper" style="position: relative;">
+
+
+
+      <!-- Side Bar Wrapper-->
+
+      <div class="col d-none d-md-block col-sm-3 col-lg-2 col-xxl-2 full-screen-height p-0" >
+
+        <div class="sidebar-div  d-flex flex-column">
+
+          <img id="logo-top" class="img-fluid" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="">
+
+          <div class="side-icons">
+            <div class="hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+              </svg>
+
+              <p>Home</p>
+            </div>
+
+            <div class="hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+
+              <p>Search</p>
+            </div>
+
+            <div class=" hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-collection" viewBox="0 0 16 16">
+                <path
+                  d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
+              </svg>
+
+              <p>Your Library</p>
+            </div>
+          </div>
+
+          <div class="linked-songs">
+            <div class="hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+              </svg>
+
+              <p>Create Playlist</p>
+
+            </div>
+
+            <div class="hover-effect d-flex ">
+              <div class="like-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </div>
+
+              <p>Liked Songs</p>
+            </div>
+            <div class="border-like"></div>
+          </div>
+          <div class="scrollbar">
+            <div class="group-side-p d-flex">
+              <p class="side-p">Spotify Playlist</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people">
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+              </svg>
+              </svg>
+            </div>
+            <div class="group-side-p d-flex">
+              <p class="side-p">Spotify Playlist</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people">
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+              </svg>
+              </svg>
+            </div>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <div class="group-side-p d-flex">
+              <p class="side-p">Spotify Playlist</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people">
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+              </svg>
+              </svg>
+            </div>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+            <p class="side-p">Spotify Playlist</p>
+          </div>
+          <button class="install d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+            </svg>
+
+            <span>Install App</span>
+          </button>
+          <div class="d-none d-md-block d-lg-none">
+            <div class="text-center"><img class="my-3" style="width: 70%" src="/media/maneskin-cover.jpg"></div>
+            <div class="position-relative" style="margin-left: 34px; width: 70%">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex flex-column">
+                  <h6 style ="font-weight: 500;">ZITTI E BUONI</h6>
+                  <p style="font-size:small">Måneskin</p>
+              </div>
+              <div id="heart-container0" onclick="changeHeart0()"><i id="heart0" class="bi bi-heart" style="font-size: 1.5rem;"></i></div>
+            </div>
+            </div>
+            <div class="slide-container-music px-1" style="margin-left:30px; margin-bottom: 10px; width:80%; height: 1px">
+              <input type="range" min="0" max="100" value="0" class="slider" ontimeupdate="rangevalue.value=value"/>
+            </div>
+            <div class="d-flex flex-row justify-content-center" style="margin-left:0px; width: 100%; color: white">
+          <h2 style="margin-right: 20px;"><i class="bi bi-skip-start-fill"></i>
+          </h2>
+          <h1 style="margin-right: 20px"><i class="bi bi-play-circle-fill" id="media-player-play0" onclick="pressPlay0()"></i>
+          </h1>
+          <h2><i class="bi bi-skip-end-fill"></i></h2>
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <!-- Main Content Wrapper-->
+
+      <main class="col full-screen-height d-flex flex-column main-padding-lr back-color-purp ">
+                
+                
+                    
+        <div class="full-screen-height album-back ">
+            
+            <!-- Navigation-->
+        <div class="scrollbar2 ">
+
+            <div id="top-nav" class="d-none d-sm-block" style="margin-left: 25px; margin-right: 25px;">
+                <nav class="navbar">
+
+                    <ul class="nav">
+                        <li class="nav-item position-relative">
+                            <a class="nav-link position-relative" href="/artist.html"><i
+                                    class="bi bi-chevron-left"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center position-relative" href="/homepage.html"><i
+                                    class="bi bi-chevron-right"></i></a>
+                        </li>
+                    </ul>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/media/profile-picture.jpg" style="width: 20px">
+                            <span class="text-truncate">Miss Beaver</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                            aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Account <span><i
+                                            class="bi bi-box-arrow-up-right"></i></span></a></li>
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Log-out</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+            <div>
+            <!-- Main Content -->
+                <div class="d-flex album-cover ">
+                    <img class="album-image"
+                        src="https://m.media-amazon.com/images/I/61dk4SHy1CL._AC_SY450_.jpg" alt="">
+                    <div class="d-flex flex-column album-text">
+                        <div class="album-details">ALBUM</div>
+                        <h3>Bohemian Rhapsody (The Original Soundtrack)</h3>
+                        <div class="d-flex album-details "> 
+                            <i class="bi bi-person-circle"></i> <div class="queen2">Queen </div>
+                            <div id="album-infos">﹒2018﹒22 songs, 1 hr 19 min</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="back-grey-scroll">
+                    <div class="songs-margin d-flex">
+                        <div class="play-width">
+                        <div id="play-btn-main-album">
+                            <div class="arrow-right"></div>
+                        </div>
+                        </div class="d-flex">
+                        <i class="bi bi-heart heart-album" style="margin-left: 20px; margin-right: 20px;"></i>
+                        <i class="bi bi-three-dots three-dots-album"></i>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between title-album">
+                        <div class="d-flex">
+                            <div style="margin-right: 15px; font-size: 12px; margin-left: 16px;">#</div>
+                            <div style="font-size: 12px;">TITLE</div>
+                        </div>
+                        <i style="font-size: 12px; margin-right: 50px;" class="bi bi-clock"></i>
+                    </div>
+                    <div class="d-flex flex-column" style="margin-left: 27px;">
+                        <div class="d-flex justify-content-between card-song-al">
+                            <div class="d-flex" style="align-items: center;">
+                                <div class="number-al-song">1</div> 
+                                 <div class="arrow"></div>
+                                <div>
+                                    <div class="song-album-title"style="font-size:14px;">20th Century Fox Fanfare</div>
+                                    <div class="queen" style="font-size:10px;">Queen</div>
+                                </div>
+                            </div> 
+                            <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+                            <div class="time-song-al">0:25</div>
+                            <i class="bi bi-three-dots dots-al-song"></i>
+                        </div></div>
+
+                        <div class="d-flex justify-content-between card-song-al">
+                            <div class="d-flex" style="align-items: center;">
+                                <div class="number-al-song">2</div>
+                                <div class="arrow"></div>
+                                <div>
+                                    <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+                                    <div class="queen" style="font-size:10px;">Queen</div>
+                                </div>
+                            </div> 
+                            <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+                            <div class="time-song-al">0:25</div>
+                            <i class="bi bi-three-dots dots-al-song"></i>
+                        </div></div>
+
+                        <div class="d-flex justify-content-between card-song-al">
+                            <div class="d-flex" style="align-items: center;">
+                                <div class="number-al-song">3</div>
+                                <div class="arrow"></div>
+                                <div>
+                                    <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+                                    <div class="queen" style="font-size:10px;">Queen</div>
+                                </div>
+                            </div> 
+                            <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+                            <div class="time-song-al">0:25</div>
+                            <i class="bi bi-three-dots dots-al-song"></i>
+                        </div></div>
+
+                        <div class="d-flex justify-content-between card-song-al">
+                            <div class="d-flex" style="align-items: center;">
+                        <div class="number-al-song">4</div>
+                        <div class="arrow"></div>
+                        <div>
+                        <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+                        <div class="queen" style="font-size:10px;">Queen</div>
+                        </div>
+                    </div> 
+                    <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+                        <div class="time-song-al">0:25</div>
+                        <i class="bi bi-three-dots dots-al-song"></i>
+                    </div></div>
+                   
+                    <div class="d-flex justify-content-between card-song-al">
+                        <div class="d-flex" style="align-items: center;">
+                    <div class="number-al-song">5</div>
+                    <div class="arrow"></div>
+                    <div>
+                    <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+                    <div class="queen" style="font-size:10px;">Queen</div>
+                    </div>
+                </div> 
+                <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+                    <div class="time-song-al">0:25</div>
+                    <i class="bi bi-three-dots dots-al-song"></i>
+                </div></div>
+
+                <div class="d-flex justify-content-between card-song-al">
+                    <div class="d-flex" style="align-items: center;">
+                <div class="number-al-song">6</div>
+                <div class="arrow"></div>
+                <div>
+                <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+                <div class="queen" style="font-size:10px;">Queen</div>
+                </div>
+            </div> 
+            <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+                <div class="time-song-al">0:25</div>
+                <i class="bi bi-three-dots dots-al-song"></i>
+            </div></div>
+
+            <div class="d-flex justify-content-between card-song-al">
+                <div class="d-flex" style="align-items: center;">
+            <div class="number-al-song">7</div>
+            <div class="arrow"></div>
+            <div>
+            <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+            <div class="queen" style="font-size:10px;">Queen</div>
+            </div>
+        </div> 
+        <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+            <div class="time-song-al">0:25</div>
+            <i class="bi bi-three-dots dots-al-song"></i>
+        </div></div>
+                
+        <div class="d-flex justify-content-between card-song-al">
+            <div class="d-flex" style="align-items: center;">
+        <div class="number-al-song">8</div>
+        <div class="arrow"></div>
+        <div>
+        <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+        <div class="queen" style="font-size:10px;">Queen</div>
+        </div>
+    </div> 
+    <div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+        <div class="time-song-al">0:25</div>
+        <i class="bi bi-three-dots dots-al-song"></i>
+    </div></div>
+    <div class="d-flex justify-content-between card-song-al">
+        <div class="d-flex" style="align-items: center;">
+    <div class="number-al-song">9</div>
+    <div class="arrow"></div>
+    <div>
+    <div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+    <div class="queen" style="font-size:10px;">Queen</div>
+    </div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+    <div class="time-song-al">0:25</div>
+    <i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+<div class="d-flex justify-content-between card-song-al">
+    <div class="d-flex" style="align-items: center;">
+<div class="number-al-song">10</div>
+<div class="arrow"></div>
+<div>
+<div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+<div  class="queen" style="font-size:10px;">Queen</div>
+</div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+<div class="time-song-al">0:25</div>
+<i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+<div class="d-flex justify-content-between card-song-al">
+<div class="d-flex" style="align-items: center;">
+<div class="number-al-song">11</div>
+<div class="arrow"></div>
+<div>
+<div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+<div class="queen" style="font-size:10px;">Queen</div>
+</div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+<div class="time-song-al">0:25</div>
+<i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+<div class="d-flex justify-content-between card-song-al">
+<div class="d-flex" style="align-items: center;">
+<div class="number-al-song">12</div>
+<div class="arrow"></div>
+<div>
+<div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+<div class="queen" style="font-size:10px;">Queen</div>
+</div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+<div class="time-song-al">0:25</div>
+<i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+<div class="d-flex justify-content-between card-song-al">
+<div class="d-flex" style="align-items: center;">
+<div class="number-al-song">13</div>
+<div class="arrow"></div>
+<div>
+<div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+<div class="queen" style="font-size:10px;">Queen</div>
+</div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+<div class="time-song-al">0:25</div>
+<i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+
+<div class="d-flex justify-content-between card-song-al">
+<div class="d-flex" style="align-items: center;">
+<div class="number-al-song">14</div>
+<div class="arrow"></div>
+<div>
+<div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+<div class="queen" style="font-size:10px;">Queen</div>
+</div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+<div class="time-song-al">0:25</div>
+<i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+
+<div class="d-flex justify-content-between card-song-al">
+<div class="d-flex" style="align-items: center;">
+<div class="number-al-song">15</div>
+<div class="arrow"></div>
+<div>
+<div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+<div class="queen" style="font-size:10px;">Queen</div>
+</div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+<div class="time-song-al">0:25</div>
+<i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+
+<div class="d-flex justify-content-between card-song-al">
+<div class="d-flex" style="align-items: center;">
+<div class="number-al-song">16</div>
+<div class="arrow"></div>
+<div>
+<div class="song-album-title" style="font-size:14px;">20th Century Fox Fanfare</div>
+<div class="queen" style="font-size:10px;">Queen</div>
+</div>
+</div> 
+<div class="d-flex"><i class="bi bi-heart heart-al-song"></i>
+<div class="time-song-al">0:25</div>
+<i class="bi bi-three-dots dots-al-song"></i>
+</div></div>
+                    
+</div>
+</div>
+                </div>
+            </div>
+    </main>
+
+
+
+      <!-- Media Player -->
+
+      <div class="d-none d-lg-block" id="media-player"> 
+        
+        <div class="row">
+    
+            <div class="col-4 d-flex" style="color: white;">
+                <div class="position-fixed bottom-15 start-50 translate-middle-x" style="z-index: 11">
+                  <div id="liveToast" class="toasted toast bg-primary rounded-7 text-center fs-6" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000">
+                    <div class="toast-body">
+                      Added to your liked songs
+                    </div>
+                  </div>
+                </div>
+                <div class="position-fixed bottom-15 start-50 translate-middle-x" style="z-index: 20">
+                  <div id="liveToast2" class="toast bg-primary rounded-7 text-center fs-6" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000">
+                    <div class="toast-body">
+                      Song removed
+                    </div>
+                  </div>
+                </div>
+              <img src="media/maneskin-cover.jpg"> 
+                <div class="d-flex flex-column mx-3 justify-content-center">
+                  <h6 style ="font-weight: 500; margin-bottom: 0px;" id="album">ZITTI E BUONI</h6>
+                  <div style="font-size:small; margin-top: 0px" id="artist">Måneskin</div>      
+                </div>
+                
+                <h6 id="heart-container" style="margin-top:35px; margin-right: 10px;" onclick="changeHeart()"><i id="heart" class="bi bi-heart"></i></h6>
+                <h6 style="margin-top:35px"><i style="color: white" class="bi bi-pip" onclick="showPopUp()"></i></h6>
+                
+                  
+        
+          
+              </div>
+              
+              <div class="col-4 mt-3">
+                <div class="d-flex justify-content-center align-items-center position-relative">
+                  
+                  <h5 style="margin-right: 20px; font-size: 14px" class="position-relative fs-6" onclick="changeShuffle()"><div style="position: absolute; top:-5px; left: 4px;" id="shuffleDot" class="invisible"><h2>.</h2></div><i class="bi bi-shuffle"></i>
+                  </h5>
+                  <h4 style="margin-right: 20px;"><a href=""><i class="bi bi-skip-start-fill"></i></a>
+                  </h4>
+                  <h2 style="margin-right: 20px;"><i class="bi bi-play-circle-fill" id="media-player-play" onclick="pressPlay()"></i>
+                  </h2>
+      
+                  <h4 style="margin-right: 20px;"><a href=""><i class="bi bi-skip-end-fill"></i></a>
+                  </h4>
+                  <h5 class="position-relative" onclick="changeRepeat()"><div style="position: absolute; top:-2px; left: 7px;" id="repeatDot" class="invisible"><h2>.</h2></div><i class="bi bi-arrow-repeat"></i>
+                  </h5>
+                </div>
+                <div class="d-flex justify-content-around align-items-center">
+                  <div style="font-size: small;"><output id="rangevalue">0:00</output> <audio src="/media/music.mp3"></audio>
+                    </div>
+                  <div class="slide-container-music px-1" style="margin-top:0px;">
+                    <input type="range" min="0" max="100" value="0" class="slider timeline" id="music-track" ontimeupdate="rangevalue.value=value"/>
+                  </div>
+                  <div style="font-size:small;" id="duration"> 0:00 </div>
+                   </div>
+              </div>
+              <div class="col-4 d-flex justify-content-end" style="padding-right: 1rem;">
+              
+                <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-mic"></i></a>
+                </h6>
+                <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-list"></i></a></h6>
+                <h6 style="margin-top:35px; margin-right: 10px;"><a href="#" id="speaker" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-container="body" data-bs-placement="top"><i class="bi bi-speaker"></i></a></h6>
+                <h4 style="margin-top:30px; margin-right: 10px;"><i class="bi bi-volume-down" id="volume-icon" onclick="muteAudio()"></i></h4>
+    
+    
+                    <div class="slide-container">
+                      <input type="range" min="0" max="100" value="50" class="slider" id="volume-slider" onchange="changeVolume()">
+                    </div>
+                    <h6 style="margin-top:35px; margin-left: 10px;"><a href=""><i class="bi bi-arrows-angle-expand"></i></a></h6>
+                  
+                  </div>
+            
+          </div>
+        </div>
+
+    </div>
+
+    <!-- Pop Up Player -->
+    <div class="position-fixed pop-up-visibility" style="bottom:10px; right:10px" id="pop-up-player">
+        <div><img src="/media/maneskin-cover.jpg"/>
+          <div id="pop-up-buttons" class="position-fixed d-flex align-items-center" style="bottom:10px; right:50px; color:white">
+          <i class="bi bi-skip-start-fill fs-3 mx-2"></i>
+          <i class="bi bi-play-fill fs-1 mx-2"></i>
+          <i class="bi bi-skip-end-fill fs-3 mx-2"></i>
+          </div> 
+        </div>
+      </div>
+  </div>
+
+
+      <!-- Media Player mini -->
+<div class="w-100 d-md-none d-flex align-items-center" id="media-player-mini" style="background: rgb(40, 40, 40)">
+        <img class="ms-2" src="media/maneskin-cover.jpg" style="height:80%;">
+        <div class="d-flex flex-column ms-3 me-5">
+                <div class="font-weight-bold" style ="font-size: 10px; color: white">ZITTI E BUONI</div>
+                <div style="font-size:10px">Måneskin</div>
+        </div>
+    <div class="d-flex justify-content-between align-items-center ms-auto me-3">
+        <div><i class="bi bi-speaker fs-6"></i></div>
+        <div class="mx-2"><i class="bi bi-heart" style="font-size: 17px; color: white"></i></div>
+        <div><i class="bi bi-play-fill fs-1" style="color: white"></i></div>
+    </div>
+  </div>
+
+  <div class="bottom-side-bar">
+
+
+    <div class="d-flex flex-column  hover-effect2">
+        <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+                    </svg>
+
+                    <p>Home</p>
+    </div>
+
+
+    <div class="d-flex flex-column  hover-effect2">
+
+        <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+
+                        <p>Search</p>
+    </div>
+        <div class="d-flex flex-column hover-effect2">
+            <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
+                <path
+                    d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
+            </svg>
+
+            <p>Your Library</p>
+        </div>
+
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
