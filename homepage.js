@@ -36,14 +36,15 @@ const searchFunc =()=>{
         const result = data.data
 
         toFill = document.getElementById("toFill")
+        toFill.innerHTML=""
 
         result.map(element => {
-            console.log(searchie)
+            
             return(
             toFill.innerHTML+= `
             <a href="./AlbumPage/${element.album.id}">
             <div
-            class="card-container position-relative d-flex justify-content-center"
+            class="card-container position-relative d-flex justify-content-center "
             >
             <img
                 src="assets/playhoverbtn.png"
