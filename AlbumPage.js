@@ -82,3 +82,39 @@ const showAlbums = () => {
 /* window.onload = function () {
   loadBands();
 }; */
+
+//m3-d5rep
+const fillTheSong = document.getElementById("fillTheSong")
+const albumTitle = document.getElementById("albumTitle")
+const artistName = document.getElementById("artistName")
+const yearAndDuration = document.getElementById("yearAndDuration") 
+
+
+const params=new URLSearchParams(window.location.search)
+const id = params.get("id")
+
+
+const albumFetch =()=>{
+
+  fetch("https://striveschool-api.herokuapp.com/api/deezer/album/"+ id)
+  .then((res)=>res.json())
+  .then((data)=>{
+
+    console.log(data)
+  })
+}
+
+
+
+
+
+
+// albumTitle  yearAndDuration
+/* <span class="text-muted infoAlbum" id="yearAndDuration"> <span class="text-white" id="artistName">${artistName} </span> ${yearAndDuration} </span>  */
+
+//div fillTheSong
+/* <span class="listNumber">1</span>
+<p class="pl-3 text-white">
+  20th Century Fox Fanfare <br/>
+  <span class="text-muted">Queen</span>
+</p> */

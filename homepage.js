@@ -42,7 +42,7 @@ const searchFunc =()=>{
             
             return(
             toFill.innerHTML+= `
-            <a href="./AlbumPage/${element.album.id}">
+            <a href="./AlbumPage.html?id=${element.album.id}">
             <div
             class="card-container position-relative d-flex justify-content-center "
             >
