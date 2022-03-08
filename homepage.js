@@ -23,7 +23,7 @@
     </div>
 </a> */
 
-//input have to invoke a fetch searching coincidences by name and catch the id to invoke fetcher ( sure? careful about artist/album ) and then display albums in homepage
+
 
 const searchFunc =()=>{
     const searchie = document.getElementById("searchie").value
@@ -55,7 +55,7 @@ const searchFunc =()=>{
                 <img
                 class="mt-3 img-card"
                 src="${element.album.cover}"
-                alt="Card image cap"
+                alt="${element.album.title}"
                 />
                 <div
                 class="d-flex flex-column align-items-start p-0 mt-3 ml-1 justify-content-start"
