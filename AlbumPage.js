@@ -85,23 +85,59 @@ const showAlbums = () => {
 
 //m3-d5rep
 const fillTheSong = document.getElementById("fillTheSong")
-const albumTitle = document.getElementById("albumTitle")
-const artistName = document.getElementById("artistName")
-const yearAndDuration = document.getElementById("yearAndDuration") 
+const artistContainer = document.getElementById("artist-container")
+ 
 
 
 const params=new URLSearchParams(window.location.search)
 const id = params.get("id")
 
 
+const fillTheAlbum =(album)=>{
+
+  artistContainer.innerHTML = `
+  <img class="img-fluid d-inline-flex" width="200px" src="${album.cover_medium}" alt="albumPhoto">
+        <div class="ml-3">
+          <h6 class="albumWord">${album.title}</h6>
+          <h2 class="albumTitle"> </h2>
+          <h6 >
+              <img class="rounded-circle img-fluid bandLogo" src="https://www.aqueenofmagic.com/wp-content/uploads/2020/12/Queen-mid-70s-approved-photo-04-web-optimised-1000.jpg" alt="Band Logo">
+              <span class="text-muted infoAlbum" > <span class="text-white">${album.artist.name} </span> yearAndDuration </span> 
+          </h6>
+      </div>
+  `
+
+  album.map((element)=>{
+return(
+    fillTheSong.innerHTML += `
+    <span class="listNumber">1</span>
+    <p class="pl-3 text-white">
+  20th Century Fox Fanfare <br/>
+  <span class="text-muted">Queen</span>
+  </p>
+    
+    `)
+
+  })
+}
+
+
+
+
 const albumFetch =()=>{
 
   fetch("https://striveschool-api.herokuapp.com/api/deezer/album/"+ id)
   .then((res)=>res.json())
-  .then((data)=>{
+  .then((album)=>{
+      console.log(album)
+    fillTheAlbum(album)
 
-    console.log(data)
   })
+}
+
+window.onload =()=>{
+  albumFetch()
+
 }
 
 
@@ -109,12 +145,4 @@ const albumFetch =()=>{
 
 
 
-// albumTitle  yearAndDuration
-/* <span class="text-muted infoAlbum" id="yearAndDuration"> <span class="text-white" id="artistName">${artistName} </span> ${yearAndDuration} </span>  */
 
-//div fillTheSong
-/* <span class="listNumber">1</span>
-<p class="pl-3 text-white">
-  20th Century Fox Fanfare <br/>
-  <span class="text-muted">Queen</span>
-</p> */
